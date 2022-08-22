@@ -79,7 +79,7 @@ header .mobile {
   display: none;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
   header .desktop {
     display: none;
   }
@@ -109,6 +109,29 @@ header .mobile {
     background-color: #9dc20b;
     line-height: 1.6;
     color: white;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  header .mobile {
+    width: 12%;
+    padding: 10px;
+  }
+
+  header .mobile img {
+    display: none;
+  }
+
+  header .mobile .button {
+    margin: 0;
+  }
+
+  header .desktop {
+    display: flex;
+  }
+
+  header .content a {
+    margin-left: 5px;
   }
 }
 
@@ -172,7 +195,7 @@ header .mobile {
   padding: 1.25rem 7.25rem;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
   #sign-up-section {
     align-items: center;
     justify-content: center;
@@ -204,9 +227,13 @@ header .mobile {
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 425px) {
   #sign-up-section {
     height: 20rem;
+  }
+
+  #sign-up-cta {
+    padding: 0;
   }
 
   #sign-up-cta h1 {
@@ -262,7 +289,7 @@ header .mobile {
   color: #4a4a4a;
 }
 
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 768px) {
   .feature h2 {
     font-size: 1.125rem;
     line-height: 1.3;
@@ -275,7 +302,7 @@ header .mobile {
   }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 425px) {
   #features-section {
     flex-flow: column;
     padding: 0;
@@ -283,7 +310,15 @@ header .mobile {
 
   .feature {
     margin: 0;
-    padding: 1.25rem 1rem 0 1rem;
+    padding: 1rem;
+  }
+
+  .feature .image-container {
+    margin: 0;
+  }
+
+  .center .content {
+    margin: 30px 0;
   }
 }
 
@@ -320,7 +355,7 @@ header .mobile {
   flex-wrap: nowrap;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 425px) {
   #filters-section {
     padding: 1.5rem 0 0 0;
   }
@@ -373,7 +408,7 @@ header .mobile {
   height: 1.875rem;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
   #quotes-section content {
     padding: 1.875rem .625rem;
   }
@@ -387,6 +422,17 @@ header .mobile {
     display: block;
     padding-top: 1rem;
     margin: auto;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #quotes-section {
+    margin: 40px auto;
+  }
+
+  .content span, #quotes-section .content img {
+    display: block;
+    margin: 20px auto 0;
   }
 }
 
@@ -407,8 +453,18 @@ footer .copyright {
   flex-grow: 1;
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 768px) {
   footer .content {
     font-size: .625rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  footer {
+    padding: 20px 15px;
+  }
+
+  .content span {
+    margin: 0;
   }
 }
